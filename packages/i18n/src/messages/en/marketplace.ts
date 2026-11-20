@@ -235,16 +235,15 @@ export const messages = defineMessages("marketplace", {
   "marketplace.plugin.hindsight.prompt.reflect":
     "Reflect on my Hindsight memories: what patterns do you see in my last month of work?",
   "marketplace.plugin.hindsight.hint.apiKey": "Create a key on the Connect page of Hindsight Cloud.",
-  "marketplace.plugin.mnemoverse.tagline": "One memory for all your AI tools",
+  "marketplace.plugin.mnemoverse.tagline": "Memory you can rate and share",
   "marketplace.plugin.mnemoverse.description":
-    "Mnemoverse is hosted long-term memory for AI agents. Agents save preferences, decisions and lessons and recall them later with a plain question, in OpenBot or in another tool: the same account works from ChatGPT, Claude, Cursor and VS Code. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Shared rooms let several agents, or several people's assistants, read and write one memory. OpenBot agents keep their own memory too; Mnemoverse is the memory that goes with you to other tools. What agents save goes to your Mnemoverse account.",
-  "marketplace.plugin.mnemoverse.app":
-    "Save, recall and rate long-term memory in your Mnemoverse account over one MCP server.",
+    "Mnemoverse is hosted long-term memory for AI agents. An agent saves a preference or a decision and finds it later with a plain question. The same account works in ChatGPT, Claude, Cursor and VS Code. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Shared rooms let several people's assistants read and write one memory. Mnemoverse receives what an agent saves and the questions it searches with.",
+  "marketplace.plugin.mnemoverse.app": "Save, search and rate memories in your Mnemoverse account.",
   "marketplace.plugin.mnemoverse.prompt.recall":
     "Before we start, check Mnemoverse for what I decided about this project last time.",
-  "marketplace.plugin.mnemoverse.prompt.save": "Save the decisions from this thread to Mnemoverse.",
+  "marketplace.plugin.mnemoverse.prompt.save": "Save each decision from this chat to Mnemoverse as a separate memory.",
   "marketplace.plugin.mnemoverse.prompt.rate":
-    "Which memories you used today actually helped? Rate them in Mnemoverse.",
+    "In Mnemoverse, rate the memories you used in this chat: which helped and which were wrong.",
   "marketplace.plugin.mnemoverse.hint.apiKey": "Create a key at console.mnemoverse.com.",
   "marketplace.plugin.figma.tagline": "Designs and prototypes",
   "marketplace.plugin.figma.description":

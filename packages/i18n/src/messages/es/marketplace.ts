@@ -235,16 +235,16 @@ export const messages = {
   "marketplace.plugin.hindsight.prompt.reflect":
     "Reflexiona sobre mis recuerdos de Hindsight: ¿qué patrones ves en mi trabajo del último mes?",
   "marketplace.plugin.hindsight.hint.apiKey": "Crea una clave en la página Connect de Hindsight Cloud.",
-  "marketplace.plugin.mnemoverse.tagline": "Una sola memoria para todas tus herramientas de IA",
+  "marketplace.plugin.mnemoverse.tagline": "Memoria que puedes valorar y compartir",
   "marketplace.plugin.mnemoverse.description":
-    "Mnemoverse da a los agentes una memoria a largo plazo alojada. Los agentes guardan preferencias, decisiones y aprendizajes y los recuperan después con una pregunta sencilla, en OpenBot o en otra herramienta: la misma cuenta funciona en ChatGPT, Claude, Cursor y VS Code. Valorar un recuerdo recuperado como útil o engañoso cambia el orden de lo que aparece la próxima vez. Las salas compartidas permiten que varios agentes, o los asistentes de varias personas, lean y escriban una misma memoria. Los agentes de OpenBot también tienen su propia memoria; Mnemoverse es la memoria que te acompaña a otras herramientas. Lo que guardan los agentes va a tu cuenta de Mnemoverse.",
-  "marketplace.plugin.mnemoverse.app":
-    "Guarda, recupera y valora memoria a largo plazo en tu cuenta de Mnemoverse con un solo servidor MCP.",
+    "Mnemoverse da a los agentes una memoria a largo plazo alojada. Un agente guarda una preferencia o una decisión y la encuentra después con una pregunta sencilla. La misma cuenta funciona en ChatGPT, Claude, Cursor y VS Code. Valorar un recuerdo recuperado como útil o engañoso cambia el orden de lo que aparece la próxima vez. Las salas compartidas permiten que los asistentes de varias personas lean y escriban una misma memoria. Mnemoverse recibe lo que guarda un agente y las preguntas con las que busca.",
+  "marketplace.plugin.mnemoverse.app": "Guarda, busca y valora recuerdos en tu cuenta de Mnemoverse.",
   "marketplace.plugin.mnemoverse.prompt.recall":
     "Antes de empezar, busca en Mnemoverse qué se decidió sobre este proyecto la última vez.",
-  "marketplace.plugin.mnemoverse.prompt.save": "Guarda en Mnemoverse las decisiones de este hilo.",
+  "marketplace.plugin.mnemoverse.prompt.save":
+    "Guarda en Mnemoverse cada decisión de este chat como un recuerdo aparte.",
   "marketplace.plugin.mnemoverse.prompt.rate":
-    "¿Qué recuerdos que usaste hoy ayudaron de verdad? Valóralos en Mnemoverse.",
+    "En Mnemoverse, valora los recuerdos que usaste en este chat: cuáles ayudaron y cuáles estaban equivocados.",
   "marketplace.plugin.mnemoverse.hint.apiKey": "Crea una clave en console.mnemoverse.com.",
   "marketplace.plugin.figma.tagline": "Diseños y prototipos",
   "marketplace.plugin.figma.description":

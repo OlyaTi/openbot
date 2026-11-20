@@ -239,14 +239,14 @@ export const messages = {
   "marketplace.plugin.hindsight.prompt.reflect":
     "הרהר בזיכרונות שלי ב-Hindsight: אילו דפוסים אתה רואה בעבודה שלי בחודש האחרון?",
   "marketplace.plugin.hindsight.hint.apiKey": "צור מפתח בדף Connect של Hindsight Cloud.",
-  "marketplace.plugin.mnemoverse.tagline": "זיכרון אחד לכל כלי ה-AI שלך",
+  "marketplace.plugin.mnemoverse.tagline": "זיכרון שאפשר לדרג ולשתף",
   "marketplace.plugin.mnemoverse.description":
-    "Mnemoverse נותן לסוכנים זיכרון לטווח ארוך מתארח. סוכנים שומרים העדפות, החלטות ולקחים ושולפים אותם מאוחר יותר בשאלה פשוטה, ב-OpenBot או בכלי אחר: אותו חשבון עובד ב-ChatGPT, ב-Claude, ב-Cursor וב-VS Code. דירוג של זיכרון שנשלף כמועיל או כמטעה משנה את סדר מה שיחזור בפעם הבאה. חדרים משותפים מאפשרים לכמה סוכנים, או לעוזרים של כמה אנשים, לקרוא ולכתוב באותו זיכרון. לסוכנים של OpenBot יש גם זיכרון משלהם; Mnemoverse הוא הזיכרון שהולך איתך לכלים אחרים. מה שהסוכנים שומרים נשמר בחשבון Mnemoverse שלך.",
-  "marketplace.plugin.mnemoverse.app":
-    "שמירה, שליפה ודירוג של זיכרון לטווח ארוך בחשבון Mnemoverse שלך דרך שרת MCP אחד.",
+    "Mnemoverse נותן לסוכנים זיכרון לטווח ארוך מתארח. סוכן שומר העדפה או החלטה ומוצא אותה מאוחר יותר בשאלה פשוטה. אותו חשבון עובד ב-ChatGPT, ב-Claude, ב-Cursor וב-VS Code. דירוג של זיכרון שנשלף כמועיל או כמטעה משנה את סדר מה שיחזור בפעם הבאה. חדרים משותפים מאפשרים לעוזרים של כמה אנשים לקרוא ולכתוב באותו זיכרון. Mnemoverse מקבל את מה שהסוכן שומר ואת השאלות שבהן הוא מחפש.",
+  "marketplace.plugin.mnemoverse.app": "שמירה, חיפוש ודירוג של זיכרונות בחשבון Mnemoverse שלך.",
   "marketplace.plugin.mnemoverse.prompt.recall": "לפני שנתחיל, בדוק ב-Mnemoverse מה הוחלט על הפרויקט הזה בפעם הקודמת.",
-  "marketplace.plugin.mnemoverse.prompt.save": "שמור ב-Mnemoverse את ההחלטות מהשרשור הזה.",
-  "marketplace.plugin.mnemoverse.prompt.rate": "אילו זיכרונות שהשתמשת בהם היום באמת עזרו? דרג אותם ב-Mnemoverse.",
+  "marketplace.plugin.mnemoverse.prompt.save": "שמור ב-Mnemoverse כל החלטה מהצ'אט הזה כזיכרון נפרד.",
+  "marketplace.plugin.mnemoverse.prompt.rate":
+    "דרג ב-Mnemoverse את הזיכרונות שהשתמשת בהם בצ'אט הזה: אילו עזרו ואילו היו שגויים.",
   "marketplace.plugin.mnemoverse.hint.apiKey": "צור מפתח ב-console.mnemoverse.com.",
   "marketplace.plugin.figma.tagline": "עיצובים ואבות טיפוס",
   "marketplace.plugin.figma.description":
