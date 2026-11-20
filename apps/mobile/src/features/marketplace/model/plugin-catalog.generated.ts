@@ -528,9 +528,9 @@ export const MOBILE_PLUGINS: readonly MobilePlugin[] = [
   {
     slug: "mnemoverse",
     name: "Mnemoverse",
-    tagline: "One memory for all your AI tools",
+    tagline: "Memory you can rate and share",
     description:
-      "Mnemoverse is hosted long-term memory for AI agents. Agents save preferences, decisions and lessons and recall them later with a plain question, in OpenBot or in another tool: the same account works from ChatGPT, Claude, Cursor and VS Code. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Shared rooms let several agents, or several people's assistants, read and write one memory. OpenBot agents keep their own memory too; Mnemoverse is the memory that goes with you to other tools. What agents save goes to your Mnemoverse account.",
+      "Mnemoverse is hosted long-term memory for AI agents. An agent saves a preference or a decision and finds it later with a plain question. The same account works in ChatGPT, Claude, Cursor and VS Code. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Shared rooms let several people's assistants read and write one memory. Mnemoverse receives what an agent saves and the questions it searches with.",
     category: "productivity",
     creatorName: "Mnemoverse",
     version: "1.0.0",
@@ -539,8 +539,11 @@ export const MOBILE_PLUGINS: readonly MobilePlugin[] = [
         id: "prompt-recall",
         text: "Before we start, check Mnemoverse for what I decided about this project last time.",
       },
-      { id: "prompt-save", text: "Save the decisions from this thread to Mnemoverse." },
-      { id: "prompt-rate", text: "Which memories you used today actually helped? Rate them in Mnemoverse." },
+      { id: "prompt-save", text: "Save each decision from this chat to Mnemoverse as a separate memory." },
+      {
+        id: "prompt-rate",
+        text: "In Mnemoverse, rate the memories you used in this chat: which helped and which were wrong.",
+      },
     ],
     websiteUrl: "https://mnemoverse.com",
     privacyPolicyUrl: "https://mnemoverse.com/privacy",
@@ -550,7 +553,7 @@ export const MOBILE_PLUGINS: readonly MobilePlugin[] = [
       {
         id: "app-mnemoverse-mcp",
         name: "Mnemoverse",
-        description: "Save, recall and rate long-term memory in your Mnemoverse account over one MCP server.",
+        description: "Save, search and rate memories in your Mnemoverse account.",
         server: {
           name: "mnemoverse",
           transport: "http",
