@@ -253,6 +253,17 @@ export const messages = {
   "marketplace.plugin.hindsight.prompt.reflect":
     "Поразмышляй над моими воспоминаниями в Hindsight: какие закономерности ты видишь в моей работе за последний месяц?",
   "marketplace.plugin.hindsight.hint.apiKey": "Создайте ключ на странице Connect в Hindsight Cloud.",
+  "marketplace.plugin.mnemoverse.tagline": "Одна память для всех ваших ИИ-инструментов",
+  "marketplace.plugin.mnemoverse.description":
+    "Mnemoverse даёт агентам долговременную память в облаке. Агенты сохраняют предпочтения, решения и выводы и потом находят их обычным вопросом, в OpenBot или в другом инструменте: тот же аккаунт работает в ChatGPT, Claude, Cursor и VS Code. Если оценить найденное воспоминание как полезное или вводящее в заблуждение, в следующий раз порядок выдачи изменится. Общие комнаты позволяют нескольким агентам или ассистентам разных людей читать и пополнять одну память. У агентов OpenBot есть и своя память, а Mnemoverse идёт с вами в другие инструменты. То, что сохраняют агенты, попадает в ваш аккаунт Mnemoverse.",
+  "marketplace.plugin.mnemoverse.app":
+    "Сохранение, поиск и оценка долговременной памяти в вашем аккаунте Mnemoverse через один MCP-сервер.",
+  "marketplace.plugin.mnemoverse.prompt.recall":
+    "Прежде чем начать, проверь в Mnemoverse, что было решено по этому проекту в прошлый раз.",
+  "marketplace.plugin.mnemoverse.prompt.save": "Сохрани в Mnemoverse решения из этой ветки.",
+  "marketplace.plugin.mnemoverse.prompt.rate":
+    "Какие воспоминания сегодня действительно помогли? Оцени их в Mnemoverse.",
+  "marketplace.plugin.mnemoverse.hint.apiKey": "Создайте ключ на console.mnemoverse.com.",
   "marketplace.plugin.figma.tagline": "Дизайны и прототипы",
   "marketplace.plugin.figma.description":
     "Figma позволяет агентам читать файлы дизайна, изучать компоненты, стили и переменные и передавать спецификации разработчикам. Она подключается к серверу MCP в настольном приложении Figma на этом компьютере. Сервер пока может только читать дизайны; поддержка записи в разработке.",

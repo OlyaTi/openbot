@@ -240,6 +240,17 @@ export const messages = {
   "marketplace.plugin.hindsight.prompt.reflect":
     "Hindsight'taki anılarım üzerinde düşün: son bir aydaki çalışmamda hangi örüntüleri görüyorsun?",
   "marketplace.plugin.hindsight.hint.apiKey": "Hindsight Cloud'un Connect sayfasında bir anahtar oluşturun.",
+  "marketplace.plugin.mnemoverse.tagline": "Tüm yapay zekâ araçlarınız için tek hafıza",
+  "marketplace.plugin.mnemoverse.description":
+    "Mnemoverse, ajanlara barındırılan uzun süreli bir hafıza sağlar. Ajanlar tercihleri, kararları ve dersleri kaydeder ve daha sonra OpenBot'ta ya da başka bir araçta basit bir soruyla geri çağırır: aynı hesap ChatGPT, Claude, Cursor ve VS Code'da çalışır. Geri çağrılan bir anıyı yararlı ya da yanıltıcı olarak puanlamak, bir sonraki sefer gelenlerin sırasını değiştirir. Paylaşılan odalar, birden çok ajanın ya da birden çok kişinin asistanlarının tek bir hafızayı okuyup yazmasını sağlar. OpenBot ajanlarının kendi hafızası da vardır; Mnemoverse sizinle diğer araçlara gelen hafızadır. Ajanların kaydettikleri Mnemoverse hesabınıza gider.",
+  "marketplace.plugin.mnemoverse.app":
+    "Tek bir MCP sunucusu üzerinden Mnemoverse hesabınızda uzun süreli hafızayı kaydedin, geri çağırın ve puanlayın.",
+  "marketplace.plugin.mnemoverse.prompt.recall":
+    "Başlamadan önce, bu proje hakkında geçen sefer ne karar verildiğine Mnemoverse'te bak.",
+  "marketplace.plugin.mnemoverse.prompt.save": "Bu konudaki kararları Mnemoverse'e kaydet.",
+  "marketplace.plugin.mnemoverse.prompt.rate":
+    "Bugün kullandığın anılardan hangileri gerçekten işe yaradı? Onları Mnemoverse'te puanla.",
+  "marketplace.plugin.mnemoverse.hint.apiKey": "console.mnemoverse.com adresinde bir anahtar oluşturun.",
   "marketplace.plugin.figma.tagline": "Tasarımlar ve prototipler",
   "marketplace.plugin.figma.description":
     "Figma, ajanların tasarım dosyalarını okumasına, bileşenleri, stilleri ve değişkenleri incelemesine ve üretim şartnamelerini mühendislere teslim etmesine olanak tanır. Bu bilgisayardaki Figma masaüstü uygulamasındaki MCP sunucusuna bağlanır. Sunucu yalnızca tasarımları okuyabilir; yazma desteği üzerinde çalışılıyor.",

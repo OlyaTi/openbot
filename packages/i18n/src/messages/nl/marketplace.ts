@@ -220,6 +220,17 @@ export const messages = {
   "marketplace.plugin.hindsight.prompt.reflect":
     "Denk na over mijn herinneringen in Hindsight: welke patronen zie je in mijn werk van de afgelopen maand?",
   "marketplace.plugin.hindsight.hint.apiKey": "Maak een sleutel op de pagina Connect van Hindsight Cloud.",
+  "marketplace.plugin.mnemoverse.tagline": "Eén geheugen voor al je AI-tools",
+  "marketplace.plugin.mnemoverse.description":
+    "Mnemoverse geeft agents een gehost langetermijngeheugen. Agents slaan voorkeuren, beslissingen en lessen op en halen ze later terug met een gewone vraag, in OpenBot of in een andere tool: hetzelfde account werkt in ChatGPT, Claude, Cursor en VS Code. Als je een opgehaalde herinnering als nuttig of misleidend beoordeelt, verandert wat de volgende keer bovenaan komt. In gedeelde ruimtes lezen en schrijven meerdere agents, of de assistenten van meerdere mensen, in één geheugen. OpenBot-agents hebben ook hun eigen geheugen; Mnemoverse is het geheugen dat met je meegaat naar andere tools. Wat agents opslaan, komt in je Mnemoverse-account.",
+  "marketplace.plugin.mnemoverse.app":
+    "Langetermijngeheugen in je Mnemoverse-account opslaan, terughalen en beoordelen via één MCP-server.",
+  "marketplace.plugin.mnemoverse.prompt.recall":
+    "Kijk voordat we beginnen in Mnemoverse wat er de vorige keer over dit project is besloten.",
+  "marketplace.plugin.mnemoverse.prompt.save": "Sla de beslissingen uit deze thread op in Mnemoverse.",
+  "marketplace.plugin.mnemoverse.prompt.rate":
+    "Welke herinneringen hebben vandaag echt geholpen? Beoordeel ze in Mnemoverse.",
+  "marketplace.plugin.mnemoverse.hint.apiKey": "Maak een sleutel op console.mnemoverse.com.",
   "marketplace.plugin.figma.tagline": "Ontwerpen en prototypes",
   "marketplace.plugin.figma.description":
     "Met Figma kunnen agents ontwerpbestanden lezen, componenten, stijlen en variabelen inspecteren en productiespecificaties aan ontwikkelaars overdragen. Het koppelt met de MCP-server in de Figma-desktopapp op deze computer. De server kan alleen ontwerpen lezen; ondersteuning voor schrijven komt eraan.",

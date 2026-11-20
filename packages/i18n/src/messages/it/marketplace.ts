@@ -232,6 +232,17 @@ export const messages = {
   "marketplace.plugin.hindsight.prompt.reflect":
     "Rifletti sui miei ricordi in Hindsight: quali schemi vedi nel mio lavoro dell'ultimo mese?",
   "marketplace.plugin.hindsight.hint.apiKey": "Crea una chiave nella pagina Connect di Hindsight Cloud.",
+  "marketplace.plugin.mnemoverse.tagline": "Una sola memoria per tutti i tuoi strumenti di IA",
+  "marketplace.plugin.mnemoverse.description":
+    "Mnemoverse dà agli agenti una memoria a lungo termine ospitata. Gli agenti salvano preferenze, decisioni e lezioni e le ritrovano più tardi con una semplice domanda, in OpenBot o in un altro strumento: lo stesso account funziona in ChatGPT, Claude, Cursor e VS Code. Valutare un ricordo recuperato come utile o fuorviante cambia l'ordine di ciò che torna la volta successiva. Le stanze condivise permettono a più agenti, o agli assistenti di più persone, di leggere e scrivere un'unica memoria. Gli agenti di OpenBot hanno anche una memoria propria; Mnemoverse è la memoria che ti segue negli altri strumenti. Ciò che gli agenti salvano finisce nel tuo account Mnemoverse.",
+  "marketplace.plugin.mnemoverse.app":
+    "Salva, ritrova e valuta la memoria a lungo termine nel tuo account Mnemoverse tramite un solo server MCP.",
+  "marketplace.plugin.mnemoverse.prompt.recall":
+    "Prima di iniziare, cerca in Mnemoverse cosa è stato deciso su questo progetto l'ultima volta.",
+  "marketplace.plugin.mnemoverse.prompt.save": "Salva in Mnemoverse le decisioni di questo thread.",
+  "marketplace.plugin.mnemoverse.prompt.rate":
+    "Quali ricordi usati oggi hanno davvero aiutato? Valutali in Mnemoverse.",
+  "marketplace.plugin.mnemoverse.hint.apiKey": "Crea una chiave su console.mnemoverse.com.",
   "marketplace.plugin.figma.tagline": "Design e prototipi",
   "marketplace.plugin.figma.description":
     "Figma permette agli agenti di leggere i file di design, ispezionare componenti, stili e variabili e passare le specifiche di produzione agli sviluppatori. Si collega al server MCP dell'app desktop di Figma, su questo computer. Il server può solo leggere i design; il supporto alla scrittura è in sviluppo.",

@@ -235,6 +235,17 @@ export const messages = {
   "marketplace.plugin.hindsight.prompt.reflect":
     "Réfléchis à mes souvenirs Hindsight : quelles tendances vois-tu dans mon travail du mois dernier ?",
   "marketplace.plugin.hindsight.hint.apiKey": "Créez une clé sur la page Connect de Hindsight Cloud.",
+  "marketplace.plugin.mnemoverse.tagline": "Une seule mémoire pour tous vos outils d'IA",
+  "marketplace.plugin.mnemoverse.description":
+    "Mnemoverse donne aux agents une mémoire à long terme hébergée. Les agents enregistrent préférences, décisions et leçons, puis les retrouvent plus tard avec une simple question, dans OpenBot ou dans un autre outil : le même compte fonctionne dans ChatGPT, Claude, Cursor et VS Code. Noter un souvenir retrouvé comme utile ou trompeur change l'ordre de ce qui revient la fois suivante. Les salons partagés permettent à plusieurs agents, ou aux assistants de plusieurs personnes, de lire et d'écrire une même mémoire. Les agents OpenBot ont aussi leur propre mémoire ; Mnemoverse est la mémoire qui vous suit dans d'autres outils. Ce que les agents enregistrent va dans votre compte Mnemoverse.",
+  "marketplace.plugin.mnemoverse.app":
+    "Enregistrez, retrouvez et notez une mémoire à long terme dans votre compte Mnemoverse via un seul serveur MCP.",
+  "marketplace.plugin.mnemoverse.prompt.recall":
+    "Avant de commencer, regarde dans Mnemoverse ce qui a été décidé sur ce projet la dernière fois.",
+  "marketplace.plugin.mnemoverse.prompt.save": "Enregistre dans Mnemoverse les décisions de ce fil.",
+  "marketplace.plugin.mnemoverse.prompt.rate":
+    "Quels souvenirs utilisés aujourd'hui ont vraiment aidé ? Note-les dans Mnemoverse.",
+  "marketplace.plugin.mnemoverse.hint.apiKey": "Créez une clé sur console.mnemoverse.com.",
   "marketplace.plugin.figma.tagline": "Designs et prototypes",
   "marketplace.plugin.figma.description":
     "Figma permet aux agents de lire des fichiers de design, d’inspecter les composants, les styles et les variables, et de transmettre les spécifications de production aux développeurs. Il se connecte au serveur MCP de l’app de bureau Figma, sur cet ordinateur. Le serveur peut seulement lire les designs ; la prise en charge de l’écriture est en cours.",
