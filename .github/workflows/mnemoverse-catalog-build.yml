@@ -1,0 +1,122 @@
+name: Mnemoverse catalog build
+
+# Runs in the OlyaTi/openbot fork only. It builds the generated plugin catalog for the
+# add-mnemoverse-app branch with the repository's own pinned Bun, runs the checks that cover
+# the listing, and commits the generated files back to that branch.
+
+on:
+  push:
+    branches: [mnemoverse-build]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      LISTING_FILES: >-
+        apps/auth-api/src/content/plugins/index.ts
+        apps/auth-api/src/content/plugins/mnemoverse.ts
+        marketplace/plugin-catalog/catalog.json
+        marketplace/plugin-catalog/plugins/mnemoverse/plugin.json
+        src/renderer/src/features/settings/marketplace-plugin-text.ts
+        packages/i18n/src/messages/ar/marketplace.ts
+        packages/i18n/src/messages/de/marketplace.ts
+        packages/i18n/src/messages/en/marketplace.ts
+        packages/i18n/src/messages/es/marketplace.ts
+        packages/i18n/src/messages/fr/marketplace.ts
+        packages/i18n/src/messages/he/marketplace.ts
+        packages/i18n/src/messages/it/marketplace.ts
+        packages/i18n/src/messages/ja/marketplace.ts
+        packages/i18n/src/messages/ko/marketplace.ts
+        packages/i18n/src/messages/nl/marketplace.ts
+        packages/i18n/src/messages/pl/marketplace.ts
+        packages/i18n/src/messages/pt/marketplace.ts
+        packages/i18n/src/messages/ru/marketplace.ts
+        packages/i18n/src/messages/tr/marketplace.ts
+        packages/i18n/src/messages/zh/marketplace.ts
+    steps:
+      - name: Check out the listing branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: add-mnemoverse-app
+
+      - name: Set up Bun
+        uses: ./.github/actions/setup-bun
+        with:
+          install: ignore-scripts
+
+      - name: Format the changed files
+        run: ./node_modules/.bin/biome check --write --max-diagnostics=none --files-ignore-unknown=true --no-errors-on-unmatched $LISTING_FILES
+
+      - name: Build the plugin catalog
+        run: bun run marketplace:build:plugins
+
+      - name: Check the generated catalog
+        run: bun run marketplace:build:plugins -- --check
+
+      - name: Check translation catalogs
+        run: bun run i18n:check
+
+      - name: Typecheck the account service
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: bun run typecheck:api
+
+      - name: Typecheck the renderer
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: bun run typecheck:renderer
+
+      - name: Typecheck node code
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: bun run typecheck:node
+
+      - name: Typecheck mobile
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: bun run typecheck:mobile
+
+      - name: Check unused files
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: bun run knip:check
+
+      - name: Check Markdown links
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: bun run check:doc-links
+
+      - name: Smoke the catalog servers
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: bun run test:mcp-catalog
+
+      - name: Show the smoke report
+        if: ${{ !cancelled() }}
+        run: |
+          report=.openbot-build/mcp-catalog-smoke/report.json
+          jq '{ok, failed, checked: (.checked | length), skipped: (.skipped | length)}' "$report" || true
+          jq '.checked[] | select(.slug == "mnemoverse")' "$report" || true
+
+      - name: Show what changed
+        if: ${{ !cancelled() }}
+        run: |
+          git status --porcelain
+          git diff --stat
+          git diff -- $LISTING_FILES
+
+      - name: Commit the generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add -A -- src/renderer/src/features/settings apps/auth-api/src apps/mobile/src/features/marketplace resources/plugin-catalog marketplace packages/i18n
+          git status --porcelain
+          if git diff --cached --quiet; then echo "Nothing to commit."; exit 0; fi
+          git commit -m "Regenerate the plugin catalog with Mnemoverse"
+          git push origin HEAD:add-mnemoverse-app
+          git show --stat HEAD
