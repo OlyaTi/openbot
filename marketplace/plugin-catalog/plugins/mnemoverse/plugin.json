@@ -8,9 +8,15 @@
   "iconUrl": "https://mnemoverse.com/apple-touch-icon.png",
   "version": "1.0.0",
   "prompts": [
-    { "id": "prompt-recall", "text": "Before we start, check Mnemoverse for what I decided about this project last time." },
+    {
+      "id": "prompt-recall",
+      "text": "Before we start, check Mnemoverse for what I decided about this project last time."
+    },
     { "id": "prompt-save", "text": "Save each decision from this chat to Mnemoverse as a separate memory." },
-    { "id": "prompt-rate", "text": "In Mnemoverse, rate the memories you used in this chat: which helped and which were wrong." }
+    {
+      "id": "prompt-rate",
+      "text": "In Mnemoverse, rate the memories you used in this chat: which helped and which were wrong."
+    }
   ],
   "apps": [
     {
