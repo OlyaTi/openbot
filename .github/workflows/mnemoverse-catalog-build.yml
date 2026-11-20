@@ -61,6 +61,15 @@ jobs:
       - name: Check translation catalogs
         run: bun run i18n:check
 
+      - name: Check agent context budget
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        run: bun run check:agent-context
+
+      - name: Show agent context counts
+        if: ${{ !cancelled() }}
+        run: cat .openbot-build/agent-context-budget/report.json || true
+
       - name: Typecheck the account service
         if: ${{ !cancelled() }}
         continue-on-error: true
