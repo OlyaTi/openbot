@@ -8,7 +8,10 @@
   "iconUrl": "https://mnemoverse.com/apple-touch-icon.png",
   "version": "1.0.0",
   "prompts": [
-    { "id": "prompt-recall", "text": "Before we start, check Mnemoverse for what I decided about this project last time." },
+    {
+      "id": "prompt-recall",
+      "text": "Before we start, check Mnemoverse for what I decided about this project last time."
+    },
     { "id": "prompt-save", "text": "Save the decisions from this thread to Mnemoverse." },
     { "id": "prompt-rate", "text": "Which memories you used today actually helped? Rate them in Mnemoverse." }
   ],

@@ -216,10 +216,13 @@ export const messages = {
   "marketplace.plugin.mnemoverse.tagline": "모든 AI 도구를 위한 하나의 기억",
   "marketplace.plugin.mnemoverse.description":
     "Mnemoverse는 에이전트에게 호스팅되는 장기 기억을 제공합니다. 에이전트는 선호, 결정, 배운 점을 저장하고 나중에 OpenBot이나 다른 도구에서 평범한 질문으로 다시 불러옵니다. 같은 계정이 ChatGPT, Claude, Cursor, VS Code에서 작동합니다. 불러온 기억을 도움이 됨 또는 오해의 소지가 있음으로 평가하면 다음에 돌아오는 기억의 순서가 바뀝니다. 공유 룸에서는 여러 에이전트나 여러 사람의 어시스턴트가 하나의 기억을 읽고 쓸 수 있습니다. OpenBot 에이전트에도 자체 기억이 있으며, Mnemoverse는 다른 도구로도 함께 가는 기억입니다. 에이전트가 저장한 내용은 내 Mnemoverse 계정으로 갑니다.",
-  "marketplace.plugin.mnemoverse.app": "하나의 MCP 서버로 Mnemoverse 계정의 장기 기억을 저장하고, 불러오고, 평가합니다.",
-  "marketplace.plugin.mnemoverse.prompt.recall": "시작하기 전에 이 프로젝트에 대해 지난번에 무엇을 결정했는지 Mnemoverse에서 확인해 주세요.",
+  "marketplace.plugin.mnemoverse.app":
+    "하나의 MCP 서버로 Mnemoverse 계정의 장기 기억을 저장하고, 불러오고, 평가합니다.",
+  "marketplace.plugin.mnemoverse.prompt.recall":
+    "시작하기 전에 이 프로젝트에 대해 지난번에 무엇을 결정했는지 Mnemoverse에서 확인해 주세요.",
   "marketplace.plugin.mnemoverse.prompt.save": "이 스레드의 결정 사항을 Mnemoverse에 저장해 주세요.",
-  "marketplace.plugin.mnemoverse.prompt.rate": "오늘 사용한 기억 중 실제로 도움이 된 것은 무엇인가요? Mnemoverse에서 평가해 주세요.",
+  "marketplace.plugin.mnemoverse.prompt.rate":
+    "오늘 사용한 기억 중 실제로 도움이 된 것은 무엇인가요? Mnemoverse에서 평가해 주세요.",
   "marketplace.plugin.mnemoverse.hint.apiKey": "console.mnemoverse.com에서 키를 만드세요.",
   "marketplace.plugin.figma.tagline": "디자인 및 프로토타입",
   "marketplace.plugin.figma.description":

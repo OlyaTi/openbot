@@ -231,10 +231,13 @@ export const messages = {
   "marketplace.plugin.mnemoverse.tagline": "すべての AI ツールで使える 1 つの記憶",
   "marketplace.plugin.mnemoverse.description":
     "Mnemoverse は、エージェントにホスト型の長期記憶を提供します。エージェントは好み、決定事項、学びを保存し、あとから OpenBot でもほかのツールでも、普通の質問で呼び出せます。同じアカウントが ChatGPT、Claude、Cursor、VS Code で使えます。呼び出した記憶を役に立った、または誤解を招いたと評価すると、次に返ってくる記憶の順序が変わります。共有ルームでは、複数のエージェントや複数の人のアシスタントが 1 つの記憶を読み書きできます。OpenBot のエージェントには独自の記憶もあります。Mnemoverse は、ほかのツールにも一緒についていく記憶です。エージェントが保存した内容は、あなたの Mnemoverse アカウントに送られます。",
-  "marketplace.plugin.mnemoverse.app": "1 つの MCP サーバーで、Mnemoverse アカウントの長期記憶を保存、呼び出し、評価します。",
-  "marketplace.plugin.mnemoverse.prompt.recall": "始める前に、このプロジェクトについて前回何が決まったかを Mnemoverse で確認してください。",
+  "marketplace.plugin.mnemoverse.app":
+    "1 つの MCP サーバーで、Mnemoverse アカウントの長期記憶を保存、呼び出し、評価します。",
+  "marketplace.plugin.mnemoverse.prompt.recall":
+    "始める前に、このプロジェクトについて前回何が決まったかを Mnemoverse で確認してください。",
   "marketplace.plugin.mnemoverse.prompt.save": "このスレッドの決定事項を Mnemoverse に保存してください。",
-  "marketplace.plugin.mnemoverse.prompt.rate": "今日使った記憶のうち、本当に役に立ったものはどれですか？ Mnemoverse で評価してください。",
+  "marketplace.plugin.mnemoverse.prompt.rate":
+    "今日使った記憶のうち、本当に役に立ったものはどれですか？ Mnemoverse で評価してください。",
   "marketplace.plugin.mnemoverse.hint.apiKey": "console.mnemoverse.com でキーを作成してください。",
   "marketplace.plugin.figma.tagline": "デザインとプロトタイプ",
   "marketplace.plugin.figma.description":
